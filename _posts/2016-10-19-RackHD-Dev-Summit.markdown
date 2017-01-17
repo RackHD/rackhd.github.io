@@ -9,6 +9,6 @@ alt:
 project-date: 2016 Nov
 #client: Start Bootstrap
 #category: Web Development
-description: RackHD Dev Summit 2016  has be hold Dec in Hopkinton, MA, at Dell EMC. The Dev Leads and Core Committers have participate and have hot discussion ..
+description: RackHD Dev Summit 2016  has be hold Dec in Hopkinton MA, at Dell EMC. The Dev Leads and Core Committers have participated and had a hot discussion ..
 
 ---
