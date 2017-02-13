@@ -61,7 +61,6 @@ h3.headline_with_line{
     color: #{{ site.color.grad }};
     font-weight: 500;
     text-align:center;
-    margin:auto;
 }
 
 /*
@@ -242,7 +241,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 17px 0;
+        padding: 6px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -257,7 +256,7 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 17px 0;
+        padding: 6px 0;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -719,6 +718,35 @@ footer .footer-below {
     height: 128px;
 }
 
+.arrow_box {
+	position: relative;
+	background: #e3f1f1;
+	border: 0px solid #c2e1f5;
+}
+.arrow_box:after, .arrow_box:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #e3f1f1;
+	border-width: 30px;
+	margin-top: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-left-color: #e3f1f1;
+	border-width: 36px;
+	margin-top: -36px;
+}
+
 /* desert scheme ported from vim to google prettify */
 pre.prettyprint { display: block; background-color: #333 }
 pre .nocode { background-color: none; color: #000 }
@@ -769,5 +797,9 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
 .thumbnail.right-caption > .caption {
     padding: 4px;
+}
+
+.thumbnail li {
+    list-style-type: none; 
 }
 ​
