@@ -82,14 +82,22 @@ h4.grid_title{
     color: #{{ site.color.grad }};
 }
 
-h5.grid_content,
-h6.grid_content {
+h5.grid_content{
     color: gray;
     font-family: 'Roboto',Calibri,Arial,sans-serif;
     margin: 0;
     font-size: 14px;
     text-align: left;
 }
+
+h6.grid_content {
+    color: gray;
+    font-family: Arial Narrow;
+    margin: 0;
+    font-size: 14px;
+    text-align: justify;
+}
+
 
 h5.grid_content.grid_content_dark,
 h6.grid_content.grid_content_dark {
