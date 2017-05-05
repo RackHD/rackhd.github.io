@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Remove Deprecated 1.1 API
-modal-id: 5
+modal-id: 3
 date: 2017-03-13
 img: 
 icon: icons8.com-Remove-Property-64.png
