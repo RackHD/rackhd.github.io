@@ -249,11 +249,10 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 6px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
-        padding: 5px 0px; 
+        padding: 6px 0 0 0px; 
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -264,7 +263,7 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 6px 0;
+        padding: 6px 0px 0px 0px;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -293,6 +292,12 @@ header .intro-text .skills {
 .navbar-default .navbar-nav li a,
 .navbar-default .navbar-brand{
         color: #{{ site.color.title }};
+}
+
+.navbar-default .navbar-nav li a.adbar-bookmark{
+    background: #f39c12;
+    font-weight: 600;
+    color: #{{ site.color.primary }};
 }
 
 .navbar-default .navbar-brand{
@@ -830,4 +835,21 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
 .modal-table tr td a{
     font-weight: 600;
+}
+
+.collapse-ad-bar{
+    background: #f39c12; 
+    width:100%"
+}
+.collapse-ad-bar h3,
+.collapse-ad-bar .toggle-up{
+    margin: 10px 0;
+}
+
+.collapse-ad-bar a.link{
+    text-decoration: underline;
+}
+
+.collapse-ad-bar a:hover{
+    color: white
 }
