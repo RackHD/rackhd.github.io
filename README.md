@@ -19,3 +19,4 @@ visit rackhd.github.io to view the content
 # Power by
 website powered by Freelancer Jekyll theme
 
+Copyright © 2017 Dell Inc. or its subsidiaries.  All Rights Reserved. 
