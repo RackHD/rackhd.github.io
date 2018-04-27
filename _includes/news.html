@@ -15,10 +15,13 @@
                         
                         <h3 style="  border-bottom: 2px solid; color:DeepSkyBlue; width:100%;"> 
                             NEWS 
-                            <a href="https://rackhd.atlassian.net/wiki/display/RAC1/Upcoming+Events" style="float:right;color: #03a9f4"><h5>Learn More...  <i class="fa fa-angle-double-right" aria-hidden="true"></i></h5></a>
+                            <!--<a href="https://rackhd.atlassian.net/wiki/display/RAC1/Upcoming+Events" style="float:right;color: #03a9f4"><h5>Learn More...  <i class="fa fa-angle-double-right" aria-hidden="true"></i></h5></a>-->
                         </h3>
                         {% assign flag = "ture" %}	
                         {% for post in site.posts %}
+                            {% capture postDate %}{{post.date | date: '%Y %m %-d' }}{% endcapture %}
+                            {% capture latestDate%}{{'2017-08-01' | date: '%Y %m %-d'}}{% endcapture%}
+                            {% if postDate >= latestDate %}
                             <a href="#portfolioModal-{{ post.modal-id }}" data-toggle="modal" class="list-group-item list-group-item-fixed-border">
                             <img src="img/news/{{post.icon}}" style="margin-right:13px;margin-left: 2px; height:30px; width:30px;float: left;">
                             <p>{{ post.title }}</p>
@@ -26,6 +29,7 @@
                                <img src="img/news/icons8.com-High-Importance-26.png" style="margin-right:2px;margin-left:5px;margin-top:-30px; height:30px; width:30px;float: right;">                           							
                             {% endif %}
                             </a>
+                            {% endif %}
                         {% assign flag = "false" %}
                         {% endfor %}
                         <a href="https://rackhd.atlassian.net/wiki/display/RAC1/RackHD+Release+Page" class="list-group-item list-group-item-fixed-border">
@@ -48,14 +52,14 @@
                     <p>Dell EMC Teams Backlogs</p>
                     </a>
 
-                    <a href="https://rackhd.atlassian.net/wiki/pages/viewpage.action?pageId=19824661" class="list-group-item list-group-item-fixed-border">
+                    <a href="http://rackhd.readthedocs.io/en/latest/customer_support/frequent_asks.html" class="list-group-item list-group-item-fixed-border">
                     <img src="img/news/icons8.com-Route-60.png" style="margin-right:10px; height:40px; width:40px;float: left">
-                    <p>RackHD Roadmap</p>
+                    <p>Frequent Asks</p>
                     </a>
 
-                    <a href="https://rackhd.atlassian.net/wiki/display/RAC1/Core+Commiter+Weekly+Interlock" class="list-group-item list-group-item-fixed-border">
+                    <a href="http://rackhd.readthedocs.io/en/latest/customer_support/howto_index.html" class="list-group-item list-group-item-fixed-border">
                     <img src="img/news/icons8.com-Handshake-60.png" style="margin-right:10px; height:40px; width:40px;float: left">
-                    <p>Core Committee Minutes</p>
+                    <p>How To</p>
                     </a>
                 </div>
                 <div class="col-lg-6">
