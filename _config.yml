@@ -48,7 +48,7 @@ social:
   - title: github
     url: https://github.com/RackHD 
   - title: slack
-    url: https://rackhd.slack.com
+    url: https://slackinviterrackhd.herokuapp.com/
 
 # Postal address (add as many lines as necessary)
 #address:
